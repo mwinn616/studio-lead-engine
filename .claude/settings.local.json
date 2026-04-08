@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(npm install:*)",
-      "Bash(node index.js \"recording studios in Austin TX\")"
+      "Bash(node index.js \"recording studios in Austin TX\")",
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "Bash(node src/enrich.js)"
     ]
   }
 }
