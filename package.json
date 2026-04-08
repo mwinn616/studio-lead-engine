@@ -1,0 +1,14 @@
+{
+  "name": "studio-lead-engine",
+  "version": "1.0.0",
+  "description": "Automated lead scraping and enrichment pipeline for studios",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  }
+}
