@@ -131,4 +131,26 @@ No code required — configured entirely in Zapier.
 
 ---
 
+## Manual Enrichment Workflow
+
+After leads are generated and AI hooks are written, the following fields are filled in manually by reviewing each lead's website:
+
+| Field | Airtable Type |
+|---|---|
+| Owner Name | Single line text |
+| Email | Email |
+| Instagram Handle | Single line text |
+| Facebook URL | URL |
+| Outreach Channel | Single select: `Email`, `Instagram`, `Facebook` |
+
+**Workflow:**
+
+1. Filter Airtable to leads where `Hook Status` is `Generated`
+2. Open each lead's `Website` URL
+3. Find the owner's name and contact info
+4. Paste into Airtable and set `Outreach Channel`
+5. When ready to reach out, change `Status` to `Contacted` — this triggers the Zapier automation that creates the contact and deal in HubSpot automatically
+
+---
+
 # studio-lead-engine
