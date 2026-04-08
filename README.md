@@ -117,4 +117,18 @@ See [OUTREACH_TEMPLATE.md](OUTREACH_TEMPLATE.md) for the cold outreach copy used
 
 ---
 
+## Phase 3 — CRM Handoff (Zapier)
+
+When a lead is ready to contact, changing its `Status` field to `Contacted` in Airtable triggers a Zapier automation that pushes the lead into HubSpot CRM.
+
+**What it does:**
+
+- Watches for Airtable records where `Status` changes to `Contacted`
+- Creates a new contact in HubSpot using the lead's name, website, phone, and market
+- Creates a deal linked to that contact with the deal stage set to `Outreach Sent`
+
+No code required — configured entirely in Zapier.
+
+---
+
 # studio-lead-engine
