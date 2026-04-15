@@ -131,6 +131,47 @@ No code required — configured entirely in Zapier.
 
 ---
 
+## Phase 4 — Dashboard UI
+
+A Next.js dashboard deployed on Vercel for managing leads and outreach.
+
+**Live:** [https://mwd-lead-engine.vercel.app](https://mwd-lead-engine.vercel.app)
+
+- Reads all leads from Airtable in real time
+- Filter by market and status
+- View AI-generated outreach hooks per lead
+- Mark leads as Contacted (triggers Zapier → HubSpot automatically)
+
+**Run locally:**
+
+```bash
+cd dashboard
+npm run dev
+```
+
+**Deploy:**
+
+```bash
+npm install -g vercel
+vercel
+```
+
+Add the following environment variables in Vercel under Settings → Environment Variables:
+
+```
+AIRTABLE_API_KEY
+AIRTABLE_BASE_ID
+AIRTABLE_TABLE_NAME
+```
+
+**Gotchas:**
+
+- Airtable field names are case-sensitive — if your table uses `Business Name` with a capital N, the API response will match exactly. Check your actual column names before wiring up the component.
+- The PATCH route updates by Airtable record ID (the `id` field on each record object, not a fields value).
+- If you have 100+ leads, the paginated GET loop in the API route handles it — don't skip that.
+
+---
+
 ## Manual Enrichment Workflow
 
 After leads are generated and AI hooks are written, the following fields are filled in manually by reviewing each lead's website:
