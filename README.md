@@ -1,6 +1,11 @@
 # Studio Lead Engine
 
-A lightweight CLI tool that searches for local business leads using the Serper Google Maps API and writes them directly to Airtable — with automatic deduplication.
+Built to power MWD's own outbound sales process. Instead of manually searching for leads and writing cold emails from scratch, this system finds them, enriches them with AI-generated outreach hooks, and routes them into HubSpot automatically.
+
+Live dashboard: https://mwd-lead-engine.vercel.app
+
+A lightweight CLI tool that searches for local business leads using the Serper Google Maps API and writes them directly to Airtable — with automatic deduplication. 
+
 
 Built with zero heavy frameworks. Just `axios` and `dotenv`.
 
@@ -193,5 +198,3 @@ After leads are generated and AI hooks are written, the following fields are fil
 5. When ready to reach out, change `Status` to `Contacted` — this triggers the Zapier automation that creates the contact and deal in HubSpot automatically
 
 ---
-
-# studio-lead-engine
