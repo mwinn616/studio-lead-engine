@@ -187,14 +187,14 @@ After leads are generated and AI hooks are written, the following fields are fil
 | Email | Email |
 | Instagram Handle | Single line text |
 | Facebook URL | URL |
-| Outreach Channel | Single select: `Email`, `Instagram`, `Facebook` |
 
 **Workflow:**
 
 1. Filter Airtable to leads where `Hook Status` is `Generated`
 2. Open each lead's `Website` URL
 3. Find the owner's name and contact info
-4. Paste into Airtable and set `Outreach Channel`
+4. Paste into Airtable
 5. When ready to reach out, change `Status` to `Contacted` — this triggers the Zapier automation that creates the contact and deal in HubSpot automatically
+6. Once in HubSpot, log outreach activity and follow-up notes directly on the contact record so that Hubspot is the source of truth for all post-contact communication
 
 ---
