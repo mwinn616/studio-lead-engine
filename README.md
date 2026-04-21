@@ -118,7 +118,7 @@ Re-running is safe — only records with a blank `Hook Status` are processed.
 
 **Outreach templates:**
 
-See [OUTREACH_TEMPLATE.md](OUTREACH_TEMPLATE.md) for the cold outreach copy used for Instagram DM and email outreach.
+In addition to the AI-generated hooks, I created a template to use manually created scripts. See [OUTREACH_TEMPLATE.md](OUTREACH_TEMPLATE.md) for the cold outreach copy used for Instagram DM and email outreach.
 
 ---
 
